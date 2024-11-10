@@ -1,0 +1,28 @@
+<br><input type="text" placeholder="Udalerriatik filtroa" #filter>
+<button class="primary" type="button" (click)="filterResults(filter.value)">Bilatu</button>
+<p>{{(currentPage - 1) * rowsPerPage + 1}}-etik {{Math.min(currentPage * rowsPerPage, totalItems)}}-era {{totalItems}} jatetxetik aurkezten dira</p>
+<div class="mb-3">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    <button (click)="resetPage()">Reset</button>
+    <button (click)="nextPage()" [disabled]="(currentPage * rowsPerPage) >= totalItems">Next</button>
+</div>
+<table id="customerTable">
+    <thead>
+        <tr>
+            <th>Izena</th>
+            <th>Udaleria</th>
+            <th>Xehetasuna</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let jatetxea of paginatedJatetxeak">
+            <td>{{jatetxea.documentName}}</td>
+            <td>{{jatetxea.municipality}}</td>
+            <td><a [routerLink]="['/details', jatetxea.municipality]" class="button">Xetehetasuna</a></td>
+        </tr>
+    </tbody>
+</table>
+<div class="pagination">
+    <span>Orria {{currentPage}} - </span>
+</div>
+<app-historiala></app-historiala>

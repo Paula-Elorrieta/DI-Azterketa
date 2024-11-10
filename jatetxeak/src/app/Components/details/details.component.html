@@ -1,0 +1,14 @@
+<div *ngIf="jatetxea">
+    <h2>{{ jatetxea.documentName }} jatetxea</h2>
+    <ul>
+      <li><strong>Izena:</strong> {{ jatetxea.documentName }}</li>
+      <li><strong>Udalerria:</strong> {{ jatetxea.municipality }}</li>
+      <li><strong>Deskribapena:</strong> {{ jatetxea.documentDescription }}</li>
+      <li><strong>Telefonoa:</strong> {{ jatetxea.phone }}</li>
+      <li><strong>Sitio Web:</strong> <a [href]="jatetxea.web" target="_blank">{{ jatetxea.web }}</a></li>
+    </ul>
+  </div>
+  <div *ngIf="!jatetxea">
+    <p>Jatetxea ez da aurkitu</p>
+  </div>
+  

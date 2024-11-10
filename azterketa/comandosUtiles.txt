@@ -1,0 +1,12 @@
+Crear un proyecto nuevo de angular:
+    - ng new <<nombre>>
+
+Encender el proyecto
+    - npm start
+
+Pagina para meter el json y que te de la interfaz ts:
+    - Quicktype
+
+Crear servicio y o componente:
+    - ng g s /service/serbitzua
+    - ng g c /conponent/nombre

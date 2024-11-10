@@ -1,0 +1,60 @@
+{
+    "coches": [
+      {
+        "marca": "Tesla",
+        "modelo": "Model S",
+        "descripcion": "Sedán eléctrico de alto rendimiento con autonomía de hasta 652 km por carga.",
+        "tipo": "Eléctrico",
+        "potencia": "670 CV",
+        "autonomia": "652 km",
+        "precio": "89900",
+        "web": "https://www.tesla.com/models",
+        "pais": "EE.UU."
+      },
+      {
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "descripcion": "Compacto económico, fiable y con opciones de motorización híbrida.",
+        "tipo": "Híbrido",
+        "potencia": "121 CV",
+        "autonomia": "800 km",
+        "precio": "22000",
+        "web": "https://www.toyota.com/corolla",
+        "pais": "Japón"
+      },
+      {
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "descripcion": "Coche deportivo icónico con opciones de motor V8 para una experiencia de conducción potente.",
+        "tipo": "Gasolina",
+        "potencia": "450 CV",
+        "autonomia": "450 km",
+        "precio": "55000",
+        "web": "https://www.ford.com/mustang",
+        "pais": "EE.UU."
+      },
+      {
+        "marca": "BMW",
+        "modelo": "i3",
+        "descripcion": "Coche urbano eléctrico compacto y ecológico, ideal para ciudad.",
+        "tipo": "Eléctrico",
+        "potencia": "170 CV",
+        "autonomia": "260 km",
+        "precio": "44000",
+        "web": "https://www.bmw.com/i3",
+        "pais": "Alemania"
+      },
+      {
+        "marca": "Mercedes-Benz",
+        "modelo": "C-Class",
+        "descripcion": "Berlina de lujo con tecnología avanzada y motor eficiente.",
+        "tipo": "Híbrido",
+        "potencia": "204 CV",
+        "autonomia": "750 km",
+        "precio": "43000",
+        "web": "https://www.mercedes-benz.com/c-class",
+        "pais": "Alemania"
+      }
+    ]
+  }
+  

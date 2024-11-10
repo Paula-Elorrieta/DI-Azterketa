@@ -1,0 +1,19 @@
+<label for="bilatu">Bilatu: </label>
+<input type="text" name="bilatu" #filter>
+<button class="primary" type="button" (click)="bilaketaEgin(filter.value)">Bilatu</button>
+<table>
+    <thead>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Tipo</th>
+        <th>Detalles</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let coche of cochesFiltrados">
+            <td>{{coche.modelo}}</td>
+            <td>{{coche.marca}}</td>
+            <td>{{coche.tipo}}</td>
+            <td [routerLink]="['/details', coche.modelo]" class="button">Details</td>
+        </tr>
+    </tbody>
+</table>

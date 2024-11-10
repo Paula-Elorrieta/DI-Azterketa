@@ -1,0 +1,39 @@
+<div *ngIf="coche">
+    <h2>{{ coche.modelo }} coche</h2>
+    <ul>
+      <li><strong>Izena:</strong> {{ coche.pais }}</li>
+      <li><strong>Udalerria:</strong> {{ coche.descripcion }}</li>
+      <li><strong>Deskribapena:</strong> {{ coche.potencia }}</li>
+      <li><strong>Telefonoa:</strong> {{ coche.precio }}</li>
+      <li><strong>Sitio Web:</strong> <a [href]="coche.web" target="_blank">{{ coche.web }}</a></li>
+    </ul>
+
+    <h3>Estas interesado en el coche??Escribe tu nombre y te llamaremos</h3>
+    <form>
+        <label for="izena">Izena: </label>
+        <input type="text" name="izena" [(ngModel)]="persona.izena">
+        <br><br>
+        <label for="abizena">Abizena: </label>
+        <input type="text" name="abizena" [(ngModel)]="persona.abizena">
+        <br><br>
+        <label for="telefonoa">Telefonoa: </label>
+        <input type="text" name="telefonoa" [(ngModel)]="persona.telefonoa">
+        <br>
+        <button (click)="anadirInteresados()">Añadir</button>
+    </form>
+    <h3>Lista de interesados:</h3>
+    <div *ngIf="interesados">
+        <ul *ngFor="let persona of interesados">
+            <li>{{persona.izena}}</li>
+            <li>{{persona.abizena}}</li>
+            <li>{{persona.telefonoa}}</li>
+        </ul>
+    </div> 
+    <div *ngIf="!interesados">
+        <p>Todavia no hay interesados</p>
+    </div> 
+
+  </div>
+  <div *ngIf="!coche">
+    <p>Coche ez da aurkitu</p>
+  </div>
