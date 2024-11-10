@@ -3,6 +3,7 @@ Crear un proyecto nuevo de angular:
 
 Encender el proyecto
     - npm start
+    - json-server --watch coches.json --port 3000
 
 Pagina para meter el json y que te de la interfaz ts:
     - Quicktype
@@ -10,3 +11,5 @@ Pagina para meter el json y que te de la interfaz ts:
 Crear servicio y o componente:
     - ng g s /service/serbitzua
     - ng g c /conponent/nombre
+
+- Importaciones: RouterOutlet, RouterLink, CommonModule, FormsModule
